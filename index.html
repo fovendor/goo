@@ -4,6 +4,7 @@
         <meta charset="utf-8"/>
         <title>Разрыв кляксы</title>
         <link rel="stylesheet" href="/styles/styles.css"/>
+        <!-- Matter.js -->
         <script src="/src/matter.min.js"></script>
     </head>
     <body>
@@ -17,9 +18,9 @@
             </div>
             <div>
                 <label>Количество точек взрыва:
-                    <span id="explosionAmountVal">100</span>
+                    <span id="explosionAmountVal">135</span>
                 </label>
-                <input type="range" id="explosionAmount" min="5" max="200" value="100"/>
+                <input type="range" id="explosionAmount" min="5" max="170" value="135"/>
             </div>
             <div>
                 <label>Ширина (px):
@@ -27,12 +28,14 @@
                 </label>
                 <input type="range" id="width" min="10" max="100" value="22"/>
             </div>
-            <!-- <div>
+            <!--
+            <div>
                 <label>Скорость (Speed):
                     <span id="speedVal">3</span>
                 </label>
                 <input type="range" id="speed" min="1" max="10" value="3"/>
-            </div> -->
+            </div>
+            -->
             <div>
                 <label>Хвост (Tail):
                     <span id="tailVal">4</span>
@@ -41,21 +44,21 @@
             </div>
             <div>
                 <label>Таймаут (Idle, мс):
-                    <span id="idleTimeoutVal">1000</span>
+                    <span id="idleTimeoutVal">3000</span>
                 </label>
                 <input type="range" id="idleTimeout" min="500" max="5000" step="100" value="3000"/>
             </div>
             <div>
                 <label>Притяжение к курсору:
-                    <span id="cursorAttractionVal">0.00010</span>
+                    <span id="cursorAttractionVal">0.00019</span>
                 </label>
-                <input type="range" id="cursorAttraction" min="0" max="0.0005" step="0.00001" value="0.00010"/>
+                <input type="range" id="cursorAttraction" min="0" max="0.0005" step="0.00001" value="0.00019"/>
             </div>
             <div>
                 <label>Межчастичное притяжение:
-                    <span id="particleAttractionVal">0.000004</span>
+                    <span id="particleAttractionVal">0.000008</span>
                 </label>
-                <input type="range" id="particleAttraction" min="0" max="0.00001" step="0.000001" value="0.000004"/>
+                <input type="range" id="particleAttraction" min="0" max="0.00001" step="0.000001" value="0.000008"/>
             </div>
             <div>
                 <label>Интенсивность взрыва:
@@ -141,6 +144,7 @@
             <div id="cursor" class="Cursor"></div>
         </div>
 
+        <!-- Подключаем наш скрипт с логикой goo -->
         <script src="/src/goo.js"></script>
     </body>
 </html>
