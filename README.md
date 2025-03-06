@@ -2,6 +2,8 @@
 
 **Goo Explosion** is an interactive demo page that uses HTML/CSS/JS and the Matter.js library to model physically appealing gooey explosions.
 
+![gif of goo](img/goo.gif "A short demo of droplet animation").
+
 ## How It Works
 
 1. **Cursor Mode**:
