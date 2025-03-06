@@ -27,15 +27,12 @@
                 </label>
                 <input type="range" id="width" min="10" max="100" value="22"/>
             </div>
-
-            <!-- Удалён блок Range -->
-
-            <div>
+            <!-- <div>
                 <label>Скорость (Speed):
                     <span id="speedVal">3</span>
                 </label>
                 <input type="range" id="speed" min="1" max="10" value="3"/>
-            </div>
+            </div> -->
             <div>
                 <label>Хвост (Tail):
                     <span id="tailVal">4</span>
@@ -66,16 +63,14 @@
                 </label>
                 <input type="range" id="explosionIntensity" min="1" max="20" value="4"/>
             </div>
-
-            <!-- Новые ползунки для размеров частиц -->
             <div>
-                <label>Минимальный размер частицы (px):
-                    <span id="minParticleSizeVal">5</span>
+                <label>Минимальный размер частицы:
+                    <span id="minParticleSizeVal">13</span>
                 </label>
-                <input type="range" id="minParticleSize" min="1" max="50" value="5"/>
+                <input type="range" id="minParticleSize" min="1" max="50" value="13"/>
             </div>
             <div>
-                <label>Максимальный размер частицы (px):
+                <label>Максимальный размер частицы:
                     <span id="maxParticleSizeVal">20</span>
                 </label>
                 <input type="range" id="maxParticleSize" min="5" max="100" value="20"/>
@@ -101,10 +96,10 @@
                 <input type="range" id="phase4Duration" min="1000" max="5000" step="100" value="3000"/>
             </div>
             <div>
-                <label>Порог сборки (px):
-                    <span id="assemblyThresholdVal">2</span>
+                <label>Порог сборки:
+                    <span id="assemblyThresholdVal">13</span>
                 </label>
-                <input type="range" id="assemblyThreshold" min="1" max="20" value="2"/>
+                <input type="range" id="assemblyThreshold" min="1" max="20" value="13"/>
             </div>
 
             <h3>Параметры физики</h3>
@@ -122,9 +117,9 @@
             </div>
             <div>
                 <label>Демпфирование (frictionAir):
-                    <span id="frictionAirVal">0.027</span>
+                    <span id="frictionAirVal">0.067</span>
                 </label>
-                <input type="range" id="frictionAir" min="0.001" max="0.1" step="0.001" value="0.027"/>
+                <input type="range" id="frictionAir" min="0.001" max="0.1" step="0.001" value="0.067"/>
             </div>
         </div>
 

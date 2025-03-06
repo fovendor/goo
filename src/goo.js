@@ -24,7 +24,7 @@ let particleAttraction = 0.000004;
 let explosionIntensity = 4;
 
 // Новые параметры размера частиц при взрыве
-let minParticleSize = 5;   // минимальный размер (px)
+let minParticleSize = 13;   // минимальный размер (px)
 let maxParticleSize = 20;  // максимальный размер (px)
 
 // Внутренняя «амплитуда дрожания» (заменяет бывший range)
@@ -34,12 +34,12 @@ let shakeAmplitude = 29; // Просто стартовое значение «�
 let phase1Duration = 2000;
 let phase2Duration = 300;
 let phase4Duration = 3000;
-let assemblyThreshold = 2; // Порог сборки (px)
+let assemblyThreshold = 13; // Порог сборки (px)
 
 // Параметры физики
 let cursorForceMultiplier = 700;
 let particleForceMultiplier = 800;
-let frictionAir = 0.027;
+let frictionAir = 0.067;
 
 // Дополнительные внутренние настройки
 let innerDampingFactor = 1;   
