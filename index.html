@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <title>Разрыв кляксы</title>
-        <link
-        rel="stylesheet" href="/styles/styles.css"/>
+        <link rel="stylesheet" href="/styles/styles.css"/>
         <script src="/src/matter.min.js"></script>
     </head>
     <body>
@@ -20,7 +19,7 @@
                 <label>Количество точек взрыва:
                     <span id="explosionAmountVal">100</span>
                 </label>
-                <input type="range" id="explosionAmount" min="5" max="100" value="100"/>
+                <input type="range" id="explosionAmount" min="5" max="200" value="100"/>
             </div>
             <div>
                 <label>Ширина (px):
@@ -28,12 +27,9 @@
                 </label>
                 <input type="range" id="width" min="10" max="100" value="22"/>
             </div>
-            <div>
-                <label>Диапазон (Range):
-                    <span id="rangeVal">29</span>
-                </label>
-                <input type="range" id="range" min="10" max="100" value="29"/>
-            </div>
+
+            <!-- Удалён блок Range -->
+
             <div>
                 <label>Скорость (Speed):
                     <span id="speedVal">3</span>
@@ -69,6 +65,20 @@
                     <span id="explosionIntensityVal">4</span>
                 </label>
                 <input type="range" id="explosionIntensity" min="1" max="20" value="4"/>
+            </div>
+
+            <!-- Новые ползунки для размеров частиц -->
+            <div>
+                <label>Минимальный размер частицы (px):
+                    <span id="minParticleSizeVal">5</span>
+                </label>
+                <input type="range" id="minParticleSize" min="1" max="50" value="5"/>
+            </div>
+            <div>
+                <label>Максимальный размер частицы (px):
+                    <span id="maxParticleSizeVal">20</span>
+                </label>
+                <input type="range" id="maxParticleSize" min="5" max="100" value="20"/>
             </div>
 
             <h3>Параметры фаз</h3>
@@ -122,7 +132,7 @@
             <svg class="ink-icon" xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
                 <defs>
                     <filter id="goo">
-                        <feGaussianBlur in="SourceGraphic" stddeviation="6" result="blur"/>
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
                         <feColorMatrix in="blur" mode="matrix" values="
                                           1 0 0 0 0
                                           0 1 0 0 0
@@ -139,4 +149,3 @@
         <script src="/src/goo.js"></script>
     </body>
 </html>
-

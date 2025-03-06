@@ -1,16 +1,20 @@
+* {
+  cursor: none !important;
+}
+
 .goo-cursor {
     position: fixed;
     width: 0;
     height: 0;
     top: -10px;
     left: -10px;
-  }
-  
-  .ink-icon {
+}
+
+.ink-icon {
     display: none;
-  }
-  
-  .Cursor {
+}
+
+.Cursor {
     pointer-events: none;
     position: fixed;
     display: block;
@@ -21,19 +25,19 @@
     z-index: 1000;
     filter: url('#goo');
     mix-blend-mode: difference;
-  }
-  
-  .Cursor span {
+}
+
+.Cursor span {
     position: absolute;
     display: block;
-    /* Размер задается из JS через width и scale */
+    /* Размер задаётся из JS через width и scale */
     border-radius: 50%;
     background-color: #000;
     transform-origin: center center;
     transform: translate(-50%, -50%);
-  }
-  
-  #controls {
+}
+
+#controls {
     position: fixed;
     bottom: 10px;
     left: 10px;
@@ -45,19 +49,18 @@
     z-index: 2000;
     max-height: 90vh;
     overflow-y: auto;
-  }
-  
-  #controls > div {
+}
+
+#controls > div {
     margin-bottom: 5px;
-  }
-  
-  #controls label {
+}
+
+#controls label {
     display: inline-block;
     width: 220px;
-  }
-  
-  h3 {
+}
+
+h3 {
     margin: 10px 0 5px;
     font-size: 16px;
-  }
-  
+}
